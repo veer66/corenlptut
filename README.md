@@ -8,7 +8,7 @@
 
 ## การติดตั้ง
 
-1. ดาวโหลด CoreNLP http://nlp.stanford.edu/software/stanford-corenlp-full-2016-10-31.zip
+1. ดาวโหลด CoreNLP http://nlp.stanford.edu/software/stanford-corenlp-full-2016-110-31.zip
 2. unzip stanford-corenlp-full-2016-10-31.zip
 
 
@@ -44,17 +44,27 @@ $ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 
 ````
 $ curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%22%2C%22outputFormat%22%3A%22json%22}' -o -
 
-{"sentences":[{"index":0,"tokens":[{"index":1,"word":"The","originalText":"The","characterOffsetBegin":0,
-"characterOffsetEnd":3,"pos":"DT","before":"","after":" "},{"index":2,"word":"quick","originalText":"quick","characterOffsetBegin":4,
-"characterOffsetEnd":9,"pos":"JJ","before":" ","after":" "},{"index":3,"word":"brown","originalText":"brown","characterOffsetBegin":10,
-"characterOffsetEnd":15,"pos":"JJ","before":" ","after":" "},{"index":4,"word":"fox","originalText":"fox","characterOffsetBegin":16,
-"characterOffsetEnd":19,"pos":"NN","before":" ","after":" "},{"index":5,"word":"jumped","originalText":"jumped","characterOffsetBegin":20,
-"characterOffsetEnd":26,"pos":"VBD","before":" ","after":" "},{"index":6,"word":"over","originalText":"over","characterOffsetBegin":27,
-"characterOffsetEnd":31,"pos":"IN","before":" ","after":" "},{"index":7,"word":"the","originalText":"the","characterOffsetBegin":32,
-"characterOffsetEnd":35,"pos":"DT","before":" ","after":" "},{"index":8,"word":"lazy","originalText":"lazy","characterOffsetBegin":36,
-"characterOffsetEnd":40,"pos":"JJ","before":" ","after":" "},{"index":9,"word":"dog","originalText":"dog","characterOffsetBegin":41,
-"characterOffsetEnd":44,"pos":"NN","before":" ","after":""},{"index":10,"word":".","originalText":".","characterOffsetBegin":44,
-"characterOffsetEnd":45,"pos":".","before":"","after":""}]}]}$ 
+{"sentences":[{"index":0,"tokens":[{"index":1,"word":"The","originalText":
+"The","characterOffsetBegin":0,"characterOffsetEnd":3,"pos":"DT",
+"before":"","after":" "},{"index":2,"word":"quick","originalText":"quick",
+"characterOffsetBegin":4,"characterOffsetEnd":9,"pos":"JJ",
+"before":" ","after":" "},{"index":3,"word":"brown","originalText":
+"brown","characterOffsetBegin":10,"characterOffsetEnd":15,"pos":"JJ",
+"before":" ","after":" "},{"index":4,"word":"fox","originalText":"fox",
+"characterOffsetBegin":16,"characterOffsetEnd":19,"pos":"NN",
+"before":" ","after":" "},{"index":5,"word":"jumped","originalText":
+"jumped","characterOffsetBegin":20,"characterOffsetEnd":26,"pos":"VBD",
+"before":" ","after":" "},{"index":6,"word":"over","originalText":
+"over","characterOffsetBegin":27,"characterOffsetEnd":31,"pos":
+"IN","before":" ","after":" "},{"index":7,"word":"the","originalText":
+"the","characterOffsetBegin":32,"characterOffsetEnd":35,"pos":"DT",
+"before":" ","after":" "},{"index":8,"word":"lazy","originalText":
+"lazy","characterOffsetBegin":36,"characterOffsetEnd":40,"pos":
+"JJ","before":" ","after":" "},{"index":9,"word":"dog","originalText":
+"dog","characterOffsetBegin":41,"characterOffsetEnd":44,"pos":"NN",
+"before":" ","after":""},{"index":10,"word":".","originalText":".",
+"characterOffsetBegin":44,"characterOffsetEnd":45,"pos":".",
+"before":"","after":""}]}]}$ 
 $ 
 ````
 
