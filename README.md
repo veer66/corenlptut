@@ -2,9 +2,12 @@
 
 ## สิ่งที่ต้องการก่อนติดตั้ง
 
+จำเป็นต้องใช้โปรแกรมดังต่อไปนี้
+
 1. Java VM
 2. curl
 3. BASH
+4. find
 
 ## การติดตั้ง
 
@@ -67,4 +70,12 @@ $ curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:
 "before":"","after":""}]}]}$ 
 $ 
 ````
+
+## การกำกับหลายไปพร้อมกัน
+
+1. ดาวน์โหลดไฟล์ tagpos.sh จาก repository นี้
+2. สั่ง chmod 755 tagpos.sh
+3. ใช้คำสั่งนี้ สมมุติว่าไฟล์ทั้งหมดอยู่ใน folder ชื่อ corpus และชื่อไฟล์และชื่อ folder ไม่มีช่องว่าง ไฟล์ทุกไฟล์มีส่วนต่อท้ายคือ .txt
+
+     find corpus -name '*.txt' | xargs -I {} ./tagpos.sh '{}'
 
