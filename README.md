@@ -20,18 +20,18 @@
       java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 
 3. เปิดหน้าต่างที่รัน server ทิ้งไว้ โดยจะเห็นความทำนองนี้
-
-      $ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
-      [main] INFO CoreNLP - --- StanfordCoreNLPServer#main() called ---
-      [main] INFO CoreNLP - setting default constituency parser
-      [main] INFO CoreNLP - warning: cannot find edu/stanford/nlp/models/srparser/englishSR.ser.gz
-      [main] INFO CoreNLP - using: edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz instead
-      [main] INFO CoreNLP - to use shift reduce parser download English models jar from:
-      [main] INFO CoreNLP - http://stanfordnlp.github.io/CoreNLP/download.html
-      [main] INFO CoreNLP -     Threads: 4
-      [main] INFO CoreNLP - Starting server...
-      [main] INFO CoreNLP - StanfordCoreNLPServer listening at /0:0:0:0:0:0:0:0:
-
+````
+$ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
+[main] INFO CoreNLP - --- StanfordCoreNLPServer#main() called ---
+[main] INFO CoreNLP - setting default constituency parser
+[main] INFO CoreNLP - warning: cannot find edu/stanford/nlp/models/srparser/englishSR.ser.gz
+[main] INFO CoreNLP - using: edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz instead
+[main] INFO CoreNLP - to use shift reduce parser download English models jar from:
+[main] INFO CoreNLP - http://stanfordnlp.github.io/CoreNLP/download.html
+[main] INFO CoreNLP -     Threads: 4
+[main] INFO CoreNLP - Starting server...
+[main] INFO CoreNLP - StanfordCoreNLPServer listening at /0:0:0:0:0:0:0:0:
+````
 
 ## ใช้งาน CoreNLP
 
