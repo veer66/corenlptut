@@ -73,7 +73,7 @@ $ curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:
 $ 
 ````
 
-## การกำกับหลายไปพร้อมกัน
+## กรณีที่ corpus มีหลายไฟล์
 
 1. ดาวน์โหลดไฟล์ tagpos.sh จาก repository นี้
 2. สั่ง chmod 755 tagpos.sh
