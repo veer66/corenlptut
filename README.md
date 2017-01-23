@@ -1,8 +1,8 @@
-# สาธิตการใช้ CoreNLP เบื้องต้น
+# การใช้ CoreNLP เบื้องต้น
 
-## สิ่งที่ต้องการก่อนติดตั้ง
+## โปรแกรมที่ต้องมีก่อน
 
-จำเป็นต้องใช้โปรแกรมดังต่อไปนี้
+โปรแกรมที่จำเป็นต้องใช้ก่อนติดตั้ง CoreNLP
 
 1. Java VM
 2. curl
@@ -38,9 +38,11 @@ $ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 
 
 ## ใช้งาน CoreNLP
 
-1. ในอีกหน้าต่างหนึ่งสั่งคำสั่งนี้
+1. ในอีกหน้าต่างหนึ่ง สั่งคำสั่งนี้
 
-      curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%22%2C%22outputFormat%22%3A%22json%22}' -o -
+````bash
+curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%22%2C%22outputFormat%22%3A%22json%22}' -o -
+````
 
 จะได้ผลลัพธ์ตามด้านล่าง
 
@@ -77,5 +79,6 @@ $
 2. สั่ง chmod 755 tagpos.sh
 3. ใช้คำสั่งนี้ สมมุติว่าไฟล์ทั้งหมดอยู่ใน folder ชื่อ corpus และชื่อไฟล์และชื่อ folder ไม่มีช่องว่าง ไฟล์ทุกไฟล์มีส่วนต่อท้ายคือ .txt
 
-     find corpus -name '*.txt' | xargs -I {} ./tagpos.sh '{}'
-
+````bash
+find corpus -name '*.txt' | xargs -I {} ./tagpos.sh '{}'
+````
