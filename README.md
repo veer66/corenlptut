@@ -95,3 +95,16 @@ corpus/b1.txt
 ````
 
 ไฟล์ .txt.json สามารถนำไปประมวลผลต่อได้เลย
+
+## การแจงประโยค
+
+### แจงประโยคโดยเรียกจาก Shell script
+````
+./parse.sh <ชื่อไฟล์>
+````
+
+### แจงประโยคผ่าน Curl
+
+````bash
+curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%2Cparse%22%2C%22outputFormat%22%3A%22json%22}' -o -
+````
