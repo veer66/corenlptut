@@ -115,3 +115,23 @@ corpus/b1.txt
 ````bash
 curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%2Cparse%22%2C%22outputFormat%22%3A%22json%22}' -o -
 ````
+
+### ผลการแจงประโยค
+
+ผลการแจงประโยคจะออกมาทำนองนี้
+
+````json
+{"sentences":[
+  {"index":0,
+   "parse":"(ROOT\n  (S\n    
+                        (NP (PRP I))\n    
+                        (VP (VBP am)\n      
+                            (NP (DT a) (NN man)))\n    (. .)))",
+   "basic-dependencies":[
+        {"dep":"ROOT",
+         "governor":0,
+         "governorGloss":"ROOT",
+         "dependent":4,
+         "dependentGloss":"man"}
+...
+````
