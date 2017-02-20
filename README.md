@@ -11,7 +11,7 @@
 
 ## การติดตั้ง
 
-1. ดาวโหลด CoreNLP http://nlp.stanford.edu/software/stanford-corenlp-full-2016-110-31.zip
+1. ดาวโหลด CoreNLP http://nlp.stanford.edu/software/stanford-corenlp-full-2016-10-31.zip
 2. unzip stanford-corenlp-full-2016-10-31.zip
 
 
