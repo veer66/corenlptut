@@ -148,6 +148,8 @@ curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:90
 >>> 
 ````
 
+#### ตัวอย่างการใช้ HTTP Requests
+
 ````
 >>> import requests
 >>> r = requests.post('http://localhost:9000?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%2Cparse%22%2C%22outputFormat%22%3A%22json%22}', data="This is a book.")
