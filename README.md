@@ -135,3 +135,15 @@ curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:90
          "dependentGloss":"man"}
 ...
 ````
+
+## Python
+
+### ตัวอย่างการใช้ JSON Parser      
+
+````
+>>> import json
+>>> x = json.loads('{"A":1,"B":2}')
+>>> x["A"]
+1
+>>> 
+````
