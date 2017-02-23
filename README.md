@@ -22,7 +22,7 @@
 
       java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 
-3. เปิดหน้าต่างที่รัน server ทิ้งไว้ โดยจะเห็นความทำนองนี้
+3. เปิดหน้าต่างที่รัน server ทิ้งไว้ โดยจะเห็นข้อความทำนองนี้
 ````
 $ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 [main] INFO CoreNLP - --- StanfordCoreNLPServer#main() called ---
@@ -43,7 +43,11 @@ $ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 
 ````bash
 curl --data 'The quick brown fox jumped over the lazy dog.' 'http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%22%2C%22outputFormat%22%3A%22json%22}' -o -
 ````
-
+   สำหรับ windows
+   
+````bash
+curl --data "The quick brown fox jumped over the lazy dog." "http://localhost:9000/?properties={%22annotators%22%3A%22tokenize%2Cssplit%2Cpos%22%2C%22outputFormat%22%3A%22json%22}" -o -
+````
 จะได้ผลลัพธ์ตามด้านล่าง
 
 ````
