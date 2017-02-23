@@ -22,7 +22,7 @@
 
       java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 
-3. เปิดหน้าต่างที่รัน server ทิ้งไว้ โดยจะเห็นความทำนองนี้
+3. เปิดหน้าต่างที่รัน server ทิ้งไว้ โดยจะเห็นข้อความทำนองนี้
 ````
 $ java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000
 [main] INFO CoreNLP - --- StanfordCoreNLPServer#main() called ---
